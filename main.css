@@ -1,0 +1,796 @@
+html {
+ 	scroll-behavior: smooth;
+}
+
+ body {
+     margin: 0px;
+
+ }
+
+ h1 {
+ 	text-transform: uppercase;
+ 	font-size: 50px;
+ 	font-family: 'Montserrat', sans-serif;
+ 	text-shadow: 2px 3px #000;
+ 	padding-top: 5%;
+ 	color: #fff;
+
+ }
+
+header {
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/rabota-svarka-fon1.jpg);
+	background-size: cover;
+	transition: all .2s ease;
+    margin-bottom: 5%;
+}
+/* .w_header {
+   background: url(../img/rabota-svarka-fon.jpg);
+   height: 100%;
+   width: 100%;
+   background-position: 0px 0%;
+   background-size: cover;
+   position: relative; 
+}*/
+
+.logo {
+	margin: 47px 6%;
+	/*box-shadow: 3px 4px 5px 0px white;*/
+	width: 20%;
+	height: auto;
+
+}
+
+/*.logo::after {
+	content: 'dxftgfghgh';
+	text-transform: uppercase;
+	font-family: sans-serif;
+	color: #fff323;
+	position: absolute;
+}*/
+
+
+.phone {
+	color: #fff323;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	float: right;
+	margin: 3% 5%;
+	text-shadow: 1px 1px #000;
+
+
+}
+
+/*main {
+	width: 100%;
+	height: 100vh;
+	background-image: url(bg.jpg);
+	background-size: cover;
+	transition: all .2s ease;*/
+
+
+.order_btn {
+	color: #000;
+	border: solid 2px #fff323;
+    float: right;
+    margin: 7% -19%;              
+    background-color: #fff323;
+    padding: 5px 24px;
+    box-shadow: 2px 4px 6px -3px black;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    border-radius: 15px;
+
+    /*width: 300px;
+	height: 60px;
+	margin: 0 auto;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 3px;
+	background-color: #ff5252;
+	text-align: center;
+	cursor: pointer;*/
+ 
+}
+
+
+/*.order_btn span {
+	line-height: 60px;
+	color: #fff;
+	font-size: 15px;
+	
+}*/
+
+.overlay {
+    position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	width: 400px;
+    height: 330px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: #e2e2e2;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.popup h2 {
+	color: #000;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+
+
+.popup input {
+	margin: 4% 15%;
+	border: 1px solid black;
+    padding: 12px;
+    width: 64%;
+    
+  
+}
+
+.popup button {
+	border: solid 2px #fff323;
+	height: 40px;
+    width: 50%;
+	margin: 5% 25%;
+	text-align: center;
+	border-radius: 15px;              
+    background-color: #fff323;
+    padding: 5px 24px;
+    box-shadow: 2px 4px 6px -3px black;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.popup {
+		width: 100%;
+		height: 100vh;
+		font-size: 15px;
+	}
+}
+
+.text1 {
+	text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.text1 p {
+	color: #fff;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 2px 3px #000;
+}
+
+.section1 {
+	background-color: #fff;
+	text-align: center;
+    width: 82%;
+    margin: 0 9%;
+}
+
+.h2 {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 35px;
+    color: #1d323d;
+}
+
+.button1 {
+	cursor:pointer;
+    display:block;
+    background-color: #fff323;
+	text-align: center; 
+	padding-top: 13px;
+	padding-bottom: 13px;
+	margin: 4% 42%;
+	border-radius: 22px;
+	box-shadow: 3px 4px 5px 0px black;	
+}	
+
+.button1 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+    color: #000;
+
+}
+
+
+/*секция после хедера---------------------------------------------------*/
+
+
+.pr_card {
+	width: 27%;
+    background-color: #e0e0e0;
+    box-shadow: 3px 4px 5px 0px #a2a0a0;
+    float: left;
+    margin: 0% 3%;
+    border-bottom: 2px solid #fff323;
+    border-radius: 15px;
+    overflow: hidden;  
+}
+
+.pr_card img {
+	width: 100%;
+
+}
+
+.pr_card h3 {
+	text-align: center;
+	text-transform: uppercase;
+	
+
+}
+
+.pr_card p {
+	padding: 3px 50px 0 30px;
+	  
+}
+
+.column1 img {
+    width: 240px;
+	height: auto;
+	margin: 1%;
+	margin-left: 285px;
+   
+}
+
+/* Наши преимущества-------------------------------------------------------*/
+
+.advantages {
+    width: 76%;
+    height: 400px;
+    margin: 5% 12%;
+}
+
+.adv_card {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	width: 27%;
+	height: 350px;
+	background-color: #f1f1f1;
+	border-radius: 15px;
+	margin: 3% 1%;
+	padding: 1% 2%;
+	float: left;
+	box-shadow: 3px 4px 5px 0px #a2a0a0;
+
+}
+
+.adv_card img {
+    margin: 12% 30%;
+
+}
+.adv_card h3 {
+	text-align: center;
+}
+
+.adv_card p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+
+/*разработка КМД----------------------------------------------------------*/
+
+
+.kmd {
+	background: url(../img/rabota-svarka-fon3.jpg);
+	background-size: 100%;
+	height: 400px;
+	margin-top: 15%;
+
+}
+
+.kmd h2 {
+	text-align: center;
+	padding-top: 8%;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 3px 2px #000;
+}
+
+.kmd p {
+	text-align: center;
+	font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*Нам доверяют----------------------------------------------------------*/
+.resent_orders {
+	background-color: #f8f8f8;
+	height: 300px;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+.carusel {
+	margin-bottom: 70px;
+	padding-top: 5px;
+}
+
+
+.carusel img {
+	width: 200px;
+	height: auto;
+	text-align: center;
+}
+
+.carusel ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 70px;
+
+}
+
+
+
+/*Секция с картой*/
+
+.map {
+    position: relative;
+}
+
+.map_wrapp {
+	 width: : 100%;
+	 height: auto;
+	 border: 0 ;
+	 
+}
+
+.card_wrapper {
+	position: absolute;
+	margin: 4% 7%;
+    background: #fff;
+    min-height: 300px;
+    padding: 5%;
+    box-sizing: border-box;
+    width: 24%;
+    top: 60px;
+    box-shadow: 3px 4px 5px 0px black;
+    border-radius: 15px;  
+}
+
+.card_text h2 {
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+.card_text p {
+	text-align: center;
+}
+/**, *:before, *:after {
+  box-sizing: border-box;
+}
+
+$bg-color: #d9d8c6;
+$primary-color: #5b5a5c;
+$secondary-color: darken($primary-color, 15%);
+
+body {
+  background: $bg-color;
+}
+
+li {
+  list-style: none;
+}
+
+.suga-.container {
+  background: $primary-color;
+  padding: .2em;
+  max-width: 570px;
+  margin: 5em auto;
+  box-shadow: 3px 3px 0px $secondary-color;
+  border: 2px solid $secondary-color;
+  border-radius: 5px;
+}
+
+.suga-slider-wrap {
+  overflow: hidden;
+  margin: 1em;
+}
+
+.suga-slider-group {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.suga-slide {
+  float: left;
+  position: relative;
+  margin-left: 0;
+  padding-right: 8px;
+}*/
+
+
+
+
+
+
+/*Галерея изображений*/
+.gallery-container {
+	margin: 0% 8%;
+}
+       
+.gallery-container ul {
+  list-style-type: none;
+  margin: 0% 13%;
+}
+.gallery-container li {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+/*Style the Image Used to Trigger the Popup*/
+.gallery figure img {
+  max-width: 100%;
+	margin: 1%;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.gallery figure img:hover {opacity: 0.7;}
+
+/* The Popup (background) */
+.popup {
+	display: none;
+	position: fixed;
+	width: 80%;
+	height: auto;
+	z-index: 1;
+	padding-top: 10%;
+	left: 50%;
+	top: 50%;
+	background: rgba(0,0,0,0.5);
+}
+.popup figure {
+  width: 60%;
+  margin: auto;
+}
+/* The Popup Content (Image) */
+#popupImage {
+	margin: auto;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	padding: 10px;
+	border-radius: 5px;
+}
+/*Animation - Zoom in the Modal */
+/* #popupImage {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+
+}
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)}
+	to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+	from {transform:scale(0);}
+	to {transform:scale(1);}
+} */
+
+/* The Close Button */
+.close {
+	position: relative;
+	float: right;
+  right: 60px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.close:hover, .close:focus {
+	cursor: pointer;
+	color: #bbb;
+}
+/* The Previous Button */
+.previous {
+	position: relative;
+	float: left;
+  padding-left: 30px;
+  top: 235px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.previous:hover, .previous:focus {
+	cursor: pointer;
+	color: #bbb;
+}
+/* The Next Button */
+.next {
+	position: relative;
+	float: right;
+  top: 235px;
+  right: 40px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+.next:hover, .next:focus {
+	cursor: pointer;
+	color: #bbb;
+}
+
+
+/*.gallery {
+    margin: 3% 11%;
+	overflow: hidden;
+}
+
+.gallery img {
+	width: 270px;
+	height: auto;
+
+}
+
+.gallery ul li {
+	list-style: none;
+	float: left;
+	font: 10px 'Montserrat', sans-serif;
+    width: 25%;
+	
+
+}
+
+.gallery ul li a img {
+	max-width: 100%;
+	padding: 2% 1%;
+	
+}
+
+.gallery h3 {
+	display: none;
+}
+*/
+
+
+/*МЫ ПРОИЗВОДИМ*/
+.section2 {
+	width: 100%;
+	display: inline-block;
+}
+
+.list1 {
+	width: 31%;
+	float: right;
+   
+}
+.list1 ul li {
+	list-style: none;
+	color: #1d323d;
+	font: 18px 'Montserrat', sans-serif;
+    font-weight: bolder;
+    padding: 6% 0%;
+
+}
+
+.list1 ul li:before {
+    content:"";
+    background:url(../img/confirm.svg);
+    float:left;
+    width:25px;
+    height:25px;
+    margin-right:1%px;
+    background-repeat: no-repeat;
+}
+
+/*СЛАЙДЕР ---------------------------------------------------------------------*/
+
+/*.owl-carusel {
+	width: 100%;
+	display: inline-block;
+}
+.owl-carusel img {
+	width: 50%;
+	height: auto;
+	float: left;
+}*/
+
+.slider_wrapp {
+  font-family:Arial;
+  width:500px;
+  display:block;
+  margin:0 auto;
+  height: 300px;
+  background: #fff;
+}
+
+.slider img {
+	float: left;
+	padding: 1% 1%;
+	width: 100px;
+}
+/*форма контакта____________________________________________________________________________________________________________*/
+
+.get_contact__two {
+    text-align: center;
+    background: url(..//img/order_form7.jpg) no-repeat;
+    background-size: 100%;
+
+}
+
+.get_contact__two h2 {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px #000;
+}
+
+.get_contact__two form {
+	display: inline-block;
+}
+
+
+.get_contact__two input {
+    padding: 16px 10px;
+    width: 50%;
+    border: 1px solid #000;
+    margin: 1% 0%;
+}
+
+.get_contact__two p {
+	float: right;
+	font-size: 15px;
+	margin: 1% 2%;
+	color: #fff;
+}
+
+
+.get_contact__two input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+
+.get_contact__two textarea {
+    border: 1px solid #000;
+    margin: 1% 20%;
+    width: 52%;
+    height: 70px;
+
+}
+
+.get_contact__two button {
+	width: 30%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #fff323;
+    padding: 10px 36px;
+    box-shadow: 2px 4px 6px -3px black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    border: 1px solid #fff323;
+    margin: 5% 35%;
+    margin-bottom: 8%;
+}
+
+
+
+.checkbox {
+	margin-right: 20%;
+	position: relative;
+}
+
+
+/*футер*/
+
+.footer {
+	background: url(../img/footer-background.png);
+	background-size: 100% auto;
+	color: #fff;
+	width: 100%;
+	height: 225px;
+	font-family: sans-serif;
+
+   
+}
+
+.copyright {
+	margin: 35px 100px;
+	float: left;
+	position: relative;
+	text-align: left;
+}
+
+
+.social {
+    padding-top: 4%;
+    margin: 0% 8%;
+	cursor: pointer;
+	float: right;
+	text-align: right;
+
+
+}
+
+.social a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.social p {
+	padding-top: 43px;
+}
+
+
+
+
+
+
